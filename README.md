@@ -19,7 +19,7 @@ What’s the man doing?
 
 ![Frisbee.jpg](Frisbee.jpg)
 
-To run our demo, you should install `openai` first. Then, your should add your `OPENAI KEY` in the code.
+To run our demo, you should install `openai` first. Then, you should add your `OPENAI KEY` in the code.
 ```
 pip install openai==1.14.2
 python CCoT.py
