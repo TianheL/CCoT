@@ -7,12 +7,26 @@ An exmaple from the original paper:
 
 
 
-Our implementation use `gpt-4-vision-preview` as LMM. Since GPT-4V may answer the question in Step 1, we add "You should answer the scene graph only, and you should not answer the question." to the original prompt.
+Our implementation uses `gpt-4-vision-preview` as LMM. Since GPT-4V may answer the question in Step 1, we add "You should answer the scene graph only, and you should not answer the question." to the original prompt.
 
-Run our demo, and you can see the following results:
+We provide a demo in our code which is exactly the example in the paper.
+
+Question
 ```
+What’s the man doing?
+(A) Catching a ball (B) Sleeping (C) Throwing a frisbee (D) Drawing
+```
+
+![Frisbee.jpg](Frisbee.jpg)
+
+To run our demo, you should install `openai` first.
+```
+pip install openai==1.14.2
 python CCoT.py
 ```
+Run our demo, and you can see the following results:
+
+
 Scene Graph:
 ```json
 {
