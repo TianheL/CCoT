@@ -11,7 +11,7 @@ def encode_image(image_path):
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 def template_gen_sg(ques):
-    return f"Question: {ques}\n For the provided image and its associated question, generate a scene graph in JSON format that includes the following:\n1. Objects that are relevant to answering the question.\n2. Object attributes that are relevant to answering the question.\n3.Object relationships that are relevant to answering the question.\nYou should answer the scene graph only, and you should not answer the question.\nScene Graph:"
+    return f"Question: {ques}\nFor the provided image and its associated question, generate a scene graph in JSON format that includes the following:\n1. Objects that are relevant to answering the question.\n2. Object attributes that are relevant to answering the question.\n3.Object relationships that are relevant to answering the question.\nYou should answer the scene graph only, and you should not answer the question.\nScene Graph:"
 
 def template_gen_ans(ques, sg):
     return f"Scene Graph:\n{sg}\nUse the image and scene graph as context and answer the following question:\nQuestion: {ques}\nAnswer with the option's letter from the given choices directly."
