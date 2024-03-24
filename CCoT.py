@@ -2,9 +2,9 @@ import base64
 from openai import OpenAI
 
 client = OpenAI(
-        api_key="Your OpenAI API Key",
-        base_url="Your OpenAI API Base"
-    )
+    api_key="Your OpenAI API Key",
+    base_url="Your OpenAI API Base"
+)
 
 def encode_image(image_path):
     with open(image_path, 'rb') as image_file:
@@ -57,6 +57,8 @@ def gen_ans(client, question, image_path, sg):
 if __name__=="__main__":
     question = "What’s the man doing?\n(A) Catching a ball (B) Sleeping (C) Throwing a frisbee (D) Drawing"
     sg=gen_sg(client,question,'Frisbee.jpg')
+    print('Scene Graph:')
     print(sg)
     ans=gen_ans(client,question,'Frisbee.jpg',sg)
+    print('Final answer:')
     print(ans)
