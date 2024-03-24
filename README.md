@@ -11,7 +11,7 @@ Our implementation uses `gpt-4-vision-preview` as LMM. Since GPT-4V may answer t
 
 We provide a demo in our code which is exactly the example in the paper.
 
-Question
+Question:
 ```
 What’s the man doing?
 (A) Catching a ball (B) Sleeping (C) Throwing a frisbee (D) Drawing
